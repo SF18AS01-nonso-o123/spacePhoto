@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YsX-4M-dXI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="spacePhoto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvb-Vb-cIV">
+                                <rect key="frame" x="16" y="44" width="343" height="623"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OmZ-hv-EER">
+                                        <rect key="frame" x="28" y="40" width="310" height="329"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TOc-Rm-u2J">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="286"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89W-dP-N53">
+                                                <rect key="frame" x="134" y="287" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9D5-JA-VB2">
+                                                <rect key="frame" x="134" y="308.5" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="329" id="fea-1h-o4W"/>
+                                            <constraint firstAttribute="width" constant="310" id="hKe-2G-YNR"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="OmZ-hv-EER" secondAttribute="trailing" constant="20" id="4Tb-5z-WgT"/>
+                                    <constraint firstAttribute="bottom" secondItem="OmZ-hv-EER" secondAttribute="bottom" constant="254" id="aUD-VO-hXl"/>
+                                    <constraint firstItem="OmZ-hv-EER" firstAttribute="leading" secondItem="Wvb-Vb-cIV" secondAttribute="leadingMargin" constant="20" id="rM0-I5-HBh"/>
+                                    <constraint firstItem="OmZ-hv-EER" firstAttribute="top" secondItem="Wvb-Vb-cIV" secondAttribute="top" constant="40" id="svT-cm-7dh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wvb-Vb-cIV" secondAttribute="trailing" id="M3x-4R-EjI"/>
+                            <constraint firstItem="Wvb-Vb-cIV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-20" id="MuL-oB-LiT"/>
+                            <constraint firstItem="Wvb-Vb-cIV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fgA-JJ-IMb"/>
+                            <constraint firstItem="Wvb-Vb-cIV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="j1f-EH-dOF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="46z-2K-dd9"/>
+                    <connections>
+                        <outlet property="copyrightlabel" destination="9D5-JA-VB2" id="Eum-BR-dMa"/>
+                        <outlet property="imageDescLabel" destination="89W-dP-N53" id="SZJ-6b-JKO"/>
+                        <outlet property="imageView" destination="TOc-Rm-u2J" id="43I-F8-2T9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mp7-OO-1XU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YsX-4M-dXI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v6r-Fy-DaR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DdL-Wz-QlU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Nn-8V-VtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
